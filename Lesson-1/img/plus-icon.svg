@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #445161;
+      }
+    </style>
+  </defs>
+  <g id="plus_icon" data-name="plus icon" transform="translate(-50 -774)">
+    <rect id="Shape_3" data-name="Shape 3" class="cls-1" width="32" height="32" transform="translate(50 774)"/>
+    <image id="Layer_2" data-name="Layer 2" width="20" height="20" transform="translate(56 780)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAFKADAAQAAAABAAAAFAAAAACRFdLHAAAAcElEQVQ4EWP8//8/AwHwASjPD1XzEUgL4FPPSISB6DYy4jOQCZ8kOXKjBpITaqh6qB6GLEDz0ZMFqpWYPHzqP4LSIT4FmMYREKG6l0EGgrITtQDYy4QMQw+S0ayHGmI0iWVUKyjkDYgLkdMpMhurXwBGOhfNbcyGiQAAAABJRU5ErkJggg=="/>
+  </g>
+</svg>

@@ -1,0 +1,168 @@
+/* --- Page --- */
+* {
+   margin: 0;
+   padding: 0;
+}
+
+/* --- Common --- */
+.container {
+   background-color: white;
+   max-width: 1280px;
+   margin: 0 auto;
+}
+
+p {
+   color: #333333;
+}
+
+.left {
+   text-align: left;
+}
+
+.main {}
+
+.section-title {
+   color: #445161;
+}
+
+.button {}
+
+/* --- Header --- */
+.header {
+   background-color: #445161;
+   color: #fff;
+}
+
+.header__wrapper {}
+
+.header__title {}
+
+.product__img {}
+
+
+/* --- About --- */
+.about {}
+
+.about__wrapper {}
+
+.about__text {}
+
+.about__video {}
+
+/* --- Pluses --- */
+.pluses {
+   background-color: #f5f5f5;
+}
+
+.pluses__wrapper {}
+
+.pluses__list {}
+
+.pluses__list__item {}
+
+/* --- Screenshots --- */
+.screenshots {}
+
+.screenshots__wrapper {}
+
+.screenshots__figure {}
+
+.screenshots__figure__img {}
+
+.screenshots__figure__caption {}
+
+.screenshots__figure__caption__title {}
+
+.screenshots__figure__caption__text {}
+
+
+/* --- Reviews --- */
+.reviews {
+   background-color: #f5f5f5;
+}
+
+.reviews__wrapper {}
+
+.reviews__figure {}
+
+.reviews__figure__img {
+   border-radius: 50%;
+}
+
+.reviews__figure__caption {}
+
+.reviews__figure__caption__text {}
+
+.reviews__figure__caption__link {}
+
+
+/* --- Buy It Now --- */
+.buy-it-now {}
+
+.buy-it-now__wrapper {}
+
+.buy-it-now__price-option {}
+
+.buy-it-now__price-option__title {}
+
+.buy-it-now__price-option__price {}
+
+.buy-it-now__price-option__text {}
+
+.standard {}
+
+.premium {}
+
+.lux {}
+
+
+
+/* --- Footer --- */
+.footer {
+   background-color: #445161;
+   color: #fff;
+}
+
+.footer__title {}
+
+.footer__wrapper {}
+
+.footer__section {}
+
+.footer__section__form {
+   display: block;
+}
+
+.send-btn {}
+
+.footer__section__info {}
+
+.footer__section__info__link {}
+
+.skype {}
+
+.messenger {}
+
+.email {}
+
+.phone {}
+
+.footer__section__info__social {}
+
+.footer__section__info__social__link {}
+
+.twitter {}
+
+.facebook {}
+
+.linkedin {}
+
+.google {}
+
+.youtube {}
+
+.footer__copyright {}
+
+.footer__copyright__text {}
+
+.footer__copyright__link {}
