@@ -36,7 +36,9 @@ ul li {
    padding: 50px;
 }
 
-.main {}
+.main {
+   overflow: hidden;
+}
 
 .section-title {
    color: #445161;
@@ -51,17 +53,59 @@ ul li {
 
 .button {}
 
-.img {
-   overflow: hidden;
-   max-width: 100%;
-   max-height: 100%;
-   object-fit: cover;
-   object-position: center;
-}
+
 
 @media (max-width: 1040px) {
+
+   .header,
+   .about {
+      justify-content: center !important;
+      flex-wrap: wrap !important;
+   }
+
+   .screenshots__figure,
+   .reviews__wrapper,
+   .reviews__figure {
+      justify-content: center !important;
+      margin: 10px 0 0 0 !important;
+   }
+
    .img {
+      /* overflow: hidden; */
+      max-width: 100% !important;
+      max-height: 100% !important;
+      object-fit: cover;
+      object-position: center;
       margin: 40px 0 0 0;
+   }
+
+   .pluses__list {
+      flex-direction: column;
+      flex-wrap: nowrap;
+   }
+
+   .pluses__list__item {
+      max-width: 100% !important;
+   }
+
+   .screenshots__wrapper,
+   .reviews__wrapper {
+      flex-direction: column;
+   }
+
+   .reviews__figure__img {
+   margin: 0;
+   }
+}
+
+@media (max-width: 574px) {
+   .screenshots__figure {
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+   }
+
+   .screenshots__figure__img {
+      margin: 0 0 10px 0 !important;
    }
 }
 
@@ -110,14 +154,17 @@ ul li {
    top: 5px;
 }
 
-.product__img {}
+.product__img {
+   max-width: 469px;
+}
 
 
 /* --- About --- */
 .about {
    display: flex;
-   flex-wrap: wrap;
+   flex-wrap: nowrap;
    justify-content: space-between;
+   max-width: 100%;
 }
 
 .about__wrapper {
@@ -127,9 +174,13 @@ ul li {
 
 .about__text {
    margin: 25px 0;
+   max-width: 100%;
 }
 
-.about__video {}
+.about__video {
+   max-width: 100%;
+   height: auto;
+}
 
 /* --- Pluses --- */
 .pluses {
@@ -138,22 +189,69 @@ ul li {
 
 .pluses__wrapper {}
 
-.pluses__list {}
+.pluses__list {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin: 25px 0 -17px 0;
+   width: 100%;
+}
 
-.pluses__list__item {}
+.pluses__list__item {
+   max-width: 48%;
+   position: relative;
+   padding: 0 0 0 32px;
+   margin: 0 0 17px 0;
+}
+
+.pluses__list__item:before {
+   content: '';
+   width: 32px;
+   height: 32px;
+   background-image: url(../img/plus-icon.svg);
+   background-size: cover;
+   -webkit-background-size: cover;
+   background-repeat: no-repeat;
+   position: absolute;
+   top: 3px;
+   left: -5px;
+}
 
 /* --- Screenshots --- */
 .screenshots {}
 
-.screenshots__wrapper {}
+.screenshots__wrapper {
+   max-width: 100%;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin: 25px 0 -25px -10px;
+}
 
-.screenshots__figure {}
+.screenshots__figure {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: nowrap;
+   margin: 0 0 25px 10px;
+   flex: 1 48%;
+}
 
-.screenshots__figure__img {}
 
-.screenshots__figure__caption {}
+.screenshots__figure__img {
+   max-width: 200px;
+   margin: 0;
+}
 
-.screenshots__figure__caption__title {}
+.screenshots__figure__caption {
+   max-width: 560px;
+   margin: 0 0 0 15px;
+}
+
+.screenshots__figure__caption__title {
+   color: #445161;
+   font-size: 24px;
+   margin: 0 0 15px 0;
+}
 
 .screenshots__figure__caption__text {}
 
@@ -163,19 +261,61 @@ ul li {
    background-color: #f5f5f5;
 }
 
-.reviews__wrapper {}
+.reviews__wrapper {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin: 25px 0 -25px -30px;
+   max-width: 100%;
+}
 
-.reviews__figure {}
+.reviews__figure {
+   flex: 1 46%;
+   display: flex;
+   /* max-width: 574px; */
+   margin: 0 0 0 30px;
+}
+
+
 
 .reviews__figure__img {
    border-radius: 50%;
+   max-width: 75px;
 }
 
-.reviews__figure__caption {}
+.reviews__figure__caption {
+   margin: 0 0 25px 30px;
+   background-color: #ebebeb;
+   padding: 13px;
+   max-width: 470px;
+   border-radius: 5px;
+   position: relative;
+}
 
-.reviews__figure__caption__text {}
+.reviews__figure__caption:before {
+   content: '';
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 25px 25px 25px 0;
+   border-color: transparent #ebebeb transparent transparent;
+   position: absolute;
+   top: 12px;
+   left: -20px;
+}
 
-.reviews__figure__caption__link {}
+.reviews__figure__caption__text {
+   font-style: italic;
+   font-size: 14px;
+}
+
+.reviews__figure__caption__link {
+   font-size: 14px;
+   color: #989898;
+   padding: 10px 0 0 0;
+   text-decoration: none;
+   display: block;
+}
 
 
 /* --- Buy It Now --- */
